@@ -1,0 +1,31 @@
+<!-- Card -->
+
+
+<div class="row">
+    <div class="col-md-4" *ngFor=" let service of services" >
+        <mdb-card   >
+            <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+              <!-- Card img -->
+              <mdb-card-img src="{{service.image}}" alt="Card image cap"></mdb-card-img>
+              <a>
+                <div class="mask"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+              <!--Title-->
+              <mdb-card-title>
+                <h4>{{service.titre}}</h4>
+              </mdb-card-title>
+          
+              <!--Text-->
+              <mdb-card-text>{{service.extrait}}
+              </mdb-card-text>
+          
+              <a [routerLink]="['/services/show/',service.slug]" mdbBtn color="primary" mdbWavesEffect>Button</a>
+            </mdb-card-body>
+          </mdb-card>
+    </div>
+</div>
+
+  <!-- Card -->

@@ -1,0 +1,25 @@
+
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="dark-font">
+                <mdb-breadcrumb >
+                    <mdb-breadcrumb-item  routerLink="/">Home</mdb-breadcrumb-item>
+                    <mdb-breadcrumb-item  routerLink="/services">Services</mdb-breadcrumb-item>
+                </mdb-breadcrumb>
+              </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <h2 class="mt-1">{{service.titre}}</h2>
+        <hr>
+        <img src="{{service.image}}" alt="{{service.titre}}">
+        <p [innerHTML]="service.contenu" class="mt-5"></p>
+    </div>
+    
+</div>
